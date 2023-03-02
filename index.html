@@ -5,6 +5,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css" />
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              primary: "#091156",
+              secondary: "#ff64ae",
+              "my-gray": "#8B8B8B",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <div class="font-poppins">
+      <!-- header -->
+      <header class="header">
+        <div class="header__inner my-container flex items-center">
+          <!-- logo -->
+          <a href="./index.html" class="block h-full">
+            <img src="./assets/images/Main Logo.png" alt="Logo" class="block h-full" />
+          </a>
+
+          <!-- right -->
+          <div class="flex items-center ml-auto">
+            <ul class="flex items-center">
+              <li>
+                <a href="" class="font-medium tracking-widest text-my-gray mr-11 hover:text-[#414880] menu-active"
+                  >Home+</a
+                >
+              </li>
+              <li>
+                <a href="" class="font-medium tracking-widest text-my-gray mr-11 hover:text-[#414880]">About</a>
+              </li>
+              <li>
+                <a href="" class="font-medium tracking-widest text-my-gray mr-11 hover:text-[#414880]">Service</a>
+              </li>
+              <li>
+                <a href="" class="font-medium tracking-widest text-my-gray mr-11 hover:text-[#414880]">Gallery</a>
+              </li>
+              <li>
+                <a href="" class="font-medium tracking-widest text-my-gray mr-11 hover:text-[#414880]">Blog</a>
+              </li>
+            </ul>
+
+            <a href="" class="my-btn">Contact</a>
+          </div>
+        </div>
+
+        <!-- slider -->
+        <section class="slider">
+          <div class="slider__item">
+            <div class="my-container h-full flex items-center">
+              <div class="mr-5">
+                <h2 class="font-semibold text-primary text-5xl leading-[60px]">Clinic & beauty consultant</h2>
+                <p class="text-primary tracking-widest font-medium mb-7">
+                  It is a long established fact that a reader will be by the readable content of a page.
+                </p>
+
+                <a href="" class="my-btn slider__item-btn my-btn--has-shadow">More Details</a>
+              </div>
+
+              <img src="./assets/images/Frame 1.png" alt="Slider Image" class="block" />
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="my-container h-full flex items-center">
+              <div class="mr-5">
+                <h2 class="font-semibold text-primary text-5xl leading-[60px]">Clinic & beauty consultant 1</h2>
+                <p class="text-primary tracking-widest font-medium mb-7">
+                  It is a long established fact that a reader will be by the readable content of a page.
+                </p>
+
+                <a href="" class="my-btn slider__item-btn my-btn--has-shadow">More Details</a>
+              </div>
+
+              <img src="./assets/images/Frame 1.png" alt="Slider Image" class="block" />
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="my-container h-full flex items-center">
+              <div class="mr-5">
+                <h2 class="font-semibold text-primary text-5xl leading-[60px]">Clinic & beauty consultant 2</h2>
+                <p class="text-primary tracking-widest font-medium mb-7">
+                  It is a long established fact that a reader will be by the readable content of a page.
+                </p>
+
+                <a href="" class="my-btn slider__item-btn my-btn--has-shadow">More Details</a>
+              </div>
+
+              <img src="./assets/images/Frame 1.png" alt="Slider Image" class="block" />
+            </div>
+          </div>
+        </section>
+        <!-- end slider -->
+      </header>
+      <!-- end header -->
+
+      <main class="h-[2000px]"></main>
+
+      <footer>Footer</footer>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
+
+    <!-- slider -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider").slick({
+          arrows: false,
+          autoplay: true,
+          dots: true,
+          customPaging: function (slider, i) {
+            // Tạo một element cho mỗi dot
+            return `<button class="slider__dot"></button>`;
+          },
+        });
+      });
+    </script>
+  </body>
 </html>
