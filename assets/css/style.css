@@ -1,11 +1,10 @@
 /* header */
 .header {
-  position: relative;
   height: 100vh;
   padding-top: var(--header-spacing-top);
   background-image: url(../images/Bubble\ 1.png), url(../images/Bubble\ 2.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: top left, top left;
+  background-size: 82% 90%, 86% 94%;
 }
 
 .header__inner {
@@ -55,3 +54,31 @@
   background-color: #414880 !important;
 }
 /* end slider */
+
+/* footer */
+.footer {
+  position: relative;
+}
+
+.footer__background-image-1 {
+  background-image: url(../images/Footer\ BG\ 2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.footer__background-image-2 {
+  background-image: url(../images/Footer\ BG\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.footer__background-image-3 {
+  z-index: -2;
+  height: 125px;
+  background-image: url(../images/Bottom\ BG.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* end footer */
