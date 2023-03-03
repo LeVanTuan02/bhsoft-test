@@ -55,6 +55,21 @@
 }
 /* end slider */
 
+/* content */
+.about-us {
+  background-image: url(../images/about-us-bubble-1.png), url(../images/about-us-bubble-2.png);
+  background-size: 60% 100%, 65% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, top right;
+}
+
+.contact-us {
+  background-image: url(../images/contact-us-bubble\ 1.png), url(../images/contact-us-bubble\ 2.png);
+  background-size: 75% 100%, 85% 100%;
+  background-repeat: no-repeat, no-repeat;
+}
+/* end content */
+
 /* footer */
 .footer {
   position: relative;
@@ -80,5 +95,10 @@
   background-image: url(../images/Bottom\ BG.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+#btn-back-top.active {
+  visibility: visible;
+  bottom: 170px;
 }
 /* end footer */
