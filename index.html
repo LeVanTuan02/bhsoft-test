@@ -52,7 +52,7 @@
           </a>
 
           <!-- right -->
-          <div class="flex items-center ml-auto">
+          <div class="hidden lg:flex items-center ml-auto">
             <ul class="flex items-center">
               <li>
                 <a href="" class="font-medium tracking-widest text-my-gray mr-11 hover:text-[#414880] menu-active"
@@ -75,6 +75,10 @@
 
             <a href="" class="my-btn">Contact</a>
           </div>
+
+          <div class="ml-auto cursor-pointer text-xl lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
         <!-- end menu -->
 
@@ -82,7 +86,7 @@
         <section class="slider">
           <div class="slider__item">
             <div class="my-container h-full flex items-center">
-              <div class="mr-5">
+              <div class="lg:mr-5">
                 <h2 class="font-semibold text-primary text-5xl leading-[60px]">Clinic & beauty consultant</h2>
                 <p class="text-primary tracking-widest font-medium mb-7">
                   It is a long established fact that a reader will be by the readable content of a page.
@@ -91,13 +95,13 @@
                 <a href="" class="my-btn slider__item-btn my-btn--has-shadow">More Details</a>
               </div>
 
-              <img src="./assets/images/Frame 1.png" alt="Slider Image" class="block" />
+              <img src="./assets/images/Frame 1.png" alt="Slider Image" class="!hidden lg:!block" />
             </div>
           </div>
 
           <div class="slider__item">
             <div class="my-container h-full flex items-center">
-              <div class="mr-5">
+              <div class="lg:mr-5">
                 <h2 class="font-semibold text-primary text-5xl leading-[60px]">Clinic & beauty consultant 1</h2>
                 <p class="text-primary tracking-widest font-medium mb-7">
                   It is a long established fact that a reader will be by the readable content of a page.
@@ -106,13 +110,13 @@
                 <a href="" class="my-btn slider__item-btn my-btn--has-shadow">More Details</a>
               </div>
 
-              <img src="./assets/images/Frame 1.png" alt="Slider Image" class="block" />
+              <img src="./assets/images/Frame 1.png" alt="Slider Image" class="!hidden lg:!block" />
             </div>
           </div>
 
           <div class="slider__item">
             <div class="my-container h-full flex items-center">
-              <div class="mr-5">
+              <div class="lg:mr-5">
                 <h2 class="font-semibold text-primary text-5xl leading-[60px]">Clinic & beauty consultant 2</h2>
                 <p class="text-primary tracking-widest font-medium mb-7">
                   It is a long established fact that a reader will be by the readable content of a page.
@@ -121,7 +125,7 @@
                 <a href="" class="my-btn slider__item-btn my-btn--has-shadow">More Details</a>
               </div>
 
-              <img src="./assets/images/Frame 1.png" alt="Slider Image" class="block" />
+              <img src="./assets/images/Frame 1.png" alt="Slider Image" class="!hidden lg:!block" />
             </div>
           </div>
         </section>
@@ -142,8 +146,10 @@
               </p>
             </div>
 
-            <div class="grid grid-cols-3 gap-14">
-              <div class="bg-white shadow-[0_25px_50px_25px_#f7f7ff] rounded-[42px] px-9 pt-[60px] pb-[70px]">
+            <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-14">
+              <div
+                class="mb-8 md:mb-0 bg-white shadow-[0_25px_50px_25px_#f7f7ff] rounded-[42px] px-9 pt-[60px] pb-[70px]"
+              >
                 <img src="./assets/images/Animation1.png" alt="Beauty consultation" class="block mx-auto" />
 
                 <div class="text-center">
@@ -154,7 +160,9 @@
                 </div>
               </div>
 
-              <div class="bg-white shadow-[0_25px_50px_25px_#f7f7ff] rounded-[42px] px-9 pt-[60px] pb-[70px]">
+              <div
+                class="mb-8 md:mb-0 bg-white shadow-[0_25px_50px_25px_#f7f7ff] rounded-[42px] px-9 pt-[60px] pb-[70px]"
+              >
                 <img src="./assets/images/Animation2.png" alt="Skin treatments" class="block mx-auto" />
 
                 <div class="text-center">
@@ -165,7 +173,9 @@
                 </div>
               </div>
 
-              <div class="bg-white shadow-[0_25px_50px_25px_#f7f7ff] rounded-[42px] px-9 pt-[60px] pb-[70px]">
+              <div
+                class="mb-8 md:mb-0 bg-white shadow-[0_25px_50px_25px_#f7f7ff] rounded-[42px] px-9 pt-[60px] pb-[70px]"
+              >
                 <img src="./assets/images/Animation3.png" alt="Beauty product" class="block mx-auto" />
 
                 <div class="text-center">
@@ -182,8 +192,8 @@
 
         <!-- about us -->
         <section class="about-us pt-[352px] pb-[256px] mt-[-220px] mb-[-115px]">
-          <div class="my-container flex">
-            <div class="flex-1 pr-10">
+          <div class="my-container flex-col-reverse lg:flex lg:flex-row">
+            <div class="lg:flex-1 lg:pr-10">
               <span class="section__heading-name">About Us</span>
               <h2 class="section__heading-title">We are the best beauty clinic</h2>
               <p class="section__heading-desc">
@@ -196,7 +206,7 @@
               </p>
 
               <div class="flex items-center mt-12">
-                <a href="" class="my-btn">Learn More</a>
+                <a href="" class="my-btn my-btn--has-shadow">Learn More</a>
 
                 <div class="ml-11 flex items-center">
                   <button class="w-12 h-12 bg-[#091156] rounded-full text-white pl-1">
@@ -211,7 +221,7 @@
             <img
               src="./assets/images/samantha-lim-LRXYS0tSyGc-unsplash.jpg"
               alt="About Us"
-              class="block w-[476px] h-[350px] object-cover shadow-[0_0_50px_25px_#fff] rounded-[50px]"
+              class="mt-10 w-full h-[500px] lg:mt-0 block lg:w-[476px] lg:h-[350px] object-cover shadow-[0_0_50px_25px_#fff] rounded-[50px]"
             />
           </div>
         </section>
@@ -226,7 +236,7 @@
           </div>
 
           <div class="mt-[100px]">
-            <div class="grid grid-cols-3">
+            <div class="md:grid md:grid-cols-2 lg:grid-cols-3">
               <div
                 class="transition rounded-[42px] pt-[90px] px-16 text-center hover:shadow-[0_25px_50px_25px_#F7F7FF]"
               >
@@ -237,7 +247,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
                 </p>
 
-                <ul class="flex mt-[50px] mb-24">
+                <ul class="flex justify-center mt-[50px] pb-24 lg:pb-0 lg:mb-24">
                   <li>
                     <a
                       href=""
@@ -275,7 +285,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
                 </p>
 
-                <ul class="flex mt-[50px] mb-24">
+                <ul class="flex justify-center mt-[50px] pb-24 lg:pb-0 lg:mb-24">
                   <li>
                     <a
                       href=""
@@ -313,7 +323,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
                 </p>
 
-                <ul class="flex mt-[50px] mb-24">
+                <ul class="flex justify-center mt-[50px] pb-24 lg:pb-0 lg:mb-24">
                   <li>
                     <a
                       href=""
@@ -348,11 +358,11 @@
         <!-- contact us -->
         <section class="contact-us pt-[208px] mt-[-62px]">
           <div class="my-container flex items-center">
-            <div class="w-1/2">
+            <div class="hidden lg:block lg:w-1/2">
               <img src="./assets/images/Contact Animations.png" alt="Contact Us" class="block w-[520px]" />
             </div>
 
-            <div class="w-1/2 flex-1 pl-9">
+            <div class="w-1/2 flex-1 lg:pl-9">
               <span class="section__heading-name">Contact Us</span>
               <h2 class="section__heading-title">Send your inquiry to our expert team</h2>
               <p class="section__heading-desc">Lorem ipsum dolor sit amet nulla turapis tellus.</p>
@@ -418,7 +428,7 @@
 
       <footer class="footer mt-16 pt-56">
         <!-- footer top -->
-        <div class="my-container grid grid-cols-2">
+        <div class="my-container grid grid-cols-1 md:grid-cols-2">
           <div class="tracking-widest text-[#D7DBFF]">
             <img src="./assets/images/Footer Logo.png" alt="Logo Footer" class="block mb-8" />
 
@@ -431,7 +441,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-2 tracking-widest">
+          <div class="mt-20 md:mt-0 grid grid-cols-1 md:grid-cols-2 tracking-widest">
             <div>
               <h3 class="mb-6 text-lg font-semibold text-white">Pages</h3>
 
@@ -530,8 +540,8 @@
 
         <!-- footer bottom -->
         <div class="my-container">
-          <div class="mt-[140px] pb-[90px] flex items-center justify-between">
-            <ul class="flex items-center">
+          <div class="mt-[140px] pb-[90px] flex flex-col md:flex-row items-center justify-between">
+            <ul class="flex items-center mb-10 md:mb-0">
               <li class="mr-11">
                 <a href="" class="text-white text-2xl">
                   <i class="fa-brands fa-facebook-f"></i>
